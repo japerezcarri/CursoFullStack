@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 01 JavaScript</title>
+</head>
+
+<body>
+    <!--<script src="prueba.js"></script>-->
+    <script>
+        /*
+            c shark
+            var- declara variable global (poco usada)
+            let- declara variable local(solo la usa una funcion)
+            const- declara constantes (valores constantes globales)
+
+            Tipos de Dato:
+            string: texto ej-- let nombre="johanna"
+            numbrer: ej: let edad=18
+            Float: Decimales
+            Boolean : validacion logica  ej let activado=true
+
+        */
+        /* let nombre="Ximena";
+         //(hacen referencia al navegador) prompt (alerta con caja de texto)//metodo de windows
+         nombre=prompt("Ingrese su nombre");
+         //alert : ventana o pop up con una indicación o mensaje para el usuario
+         alert("Hola como estas"+ nombre);*/
+
+        /* let x=5;
+         let y =2;
+         let suma=x+y;
+         console.log("la suma es : "+ suma);
+         //Template Strings -ECMA Script 6
+        document.write("la suma es de: "+ suma);
+        alert(`la suma es de: 
+        ${suma}`)*/
+
+        //operadores de asignación devuelve valor booleano
+        /*let x=2;
+        let y=3;
+         document.write(`variable x : ${x} <br> variable y: ${y}`);
+        let mayor= x>y;
+        let mayorigual =x>=y;
+        let menor = x<y;
+        let menorIgual= x<=y;
+        let igual= x==y; 
+        let igualEstricto= x===y;//valor y tipo 
+         console.log(`igual estricto mismo tipo de dato mismo valor: ${igualEstricto}`)
+         */
+        //Ctl+} comentar y descomentar o Alt+shift+A
+
+        //Operadores Lógicos
+        /* 
+                let variable1= false;
+                let $variable2 = true; */
+        //AND 
+        /*  let resuladoAND = variable1 && $variable2;
+         alert(`El resultado AND es: ${resuladoAND}`); */
+
+        // Simblo or || 
+        /* let resuladoOR = variable1 || $variable2;
+        alert(`El resultado OR es: ${resuladoOR}`); */
+
+
+        //Negación !
+        // let resultadoNOT= !variable1;
+        // //variable1 != variable2
+        // alert(`Resultado Not: ${resultadoNOT}`);
+
+        //Estructura de control
+
+        //Switch
+
+        let opcionUsuario = prompt("ingrese un numero del 1 al 3");
+
+        switch (opcionUsuario) {
+            case "1":
+                alert("Escogio el número 1");
+                break;
+            case "2":
+                alert("Escogio el número 2");
+                break;
+            case "3":
+                alert("Escogio el número 3");
+                break;
+            default:
+                alert("No es un número entre 1 y 3");
+        }
+
+
+
+    </script>
+</body>
+
+</html>

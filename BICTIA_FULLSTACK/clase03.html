@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 03- Bases JavaScript</title>
+</head>
+
+<body>
+    <script>
+        /*  Estucturas iterativas */
+        /* 
+                let i = 0;
+        
+                do {
+                    i++;
+                    document.write(`Numero: ${i}<br>`)
+                } while (i < 10);
+        
+         */
+        /* 
+        Objeto String
+        split- Romper cadena a partir de un determinado caracter
+        length
+        splice
+        toLowerCase- convertir cadena a minuscula
+        toUperCase 
+        join
+        concat
+        charAt- trae caracter en el espacio especificado
+        trim- quita espacios en blanco en extremos
+        repeat
+        str
+        subst- Extrae una cadena desde un punto hasta determinada cantidad de caracteres
+        lastIndexOf ultima posicion de un caracter especifico
+        IndexOf primer posicion de un caracter especififo
+ 
+         *//* 
+      let cadena=prompt("Ingrese una frase");
+      
+      document.write(`Longitud de la cadena es de: ${cadena.length}<br>`);
+      document.write(`Texto en Mayusculas: ${cadena.toUpperCase()}<br>`);
+      document.write(`Caracter en primer posición (1) ${cadena.charAt(0)}<br>`);
+      let animal="Mi animal favorito es el gato";
+      document.write(`${animal.replace("gato","perro")} <br>`); */
+
+
+
+        /* Metodos o funciones para arreglos
+        join- concatenar a partir de un simbolo o un caracter
+ 
+        concat- cocatenar o unir m¿dos o mas arreglos
+        push- agregar datos a .un arreglo (siempre en la ultima posicion)
+        splice- Obtenemos una porcion del areglo
+        shift- Eliminar dato en la posicion (0)
+        sortOrdenar un arreglo de mayor a menor o viceversa
+        unshift- Agregar datos en la posicion 0 del arreglo
+        map
+        reverse- Invertir el arregolo
+        pop- Eliminamos dato de la ultima posicion del arreglo
+        find    
+        
+        */
+        /*         let alfa1 = ["A", "B", "C"]
+                let alfa2 = ["D", "E", "C"];
+                let grupoA,
+                    grupoB,
+                    inverso;
+        
+                grupoA=alfa1.concat(alfa2);
+                document.write(grupoA+ "<br>");
+        
+                grupoB=grupoA.join("-");
+                document.write(grupoB+"<br>");
+        
+                grupoA.pop();
+                document.write(grupoA+ "<br>");
+        
+                grupoA.push("G");
+                document.write(grupoA+ "<br>");
+        
+                grupoA.shift();
+                document.write(grupoA+ "<br>");
+        
+                grupoA.unshift("Z");
+                document.write(grupoA+ "<br>");
+        
+                inverso=grupoA.reverse();
+                document.write(inverso)+ "<br>";
+        
+                grupoA.splice(2,3,"D","G");
+                document.write(grupoA+"<br>"); */
+
+
+        /* Ejercicio
+        1)Pedir x cant de datos num. se deben discriminar 0 e imprimir los datos. 
+        
+        2) pedir x datos. (num o letras) .  ingresar solo el primer caracter. organizar datos . primero letras y luego num 
+        */
+
+        /* let mat = new Array(5);
+        alert("Debe ingresar 5 números");
+        for (i = 0; i < 5; i++) {
+            var num=parseInt(prompt(`Ingrese el dato numero: ${i+1}`));
+            if (num!=0){
+                mat[i]=num;
+            }
+        }
+        document.write(mat); */
+
+        let mat2=new Array(6);
+        let letras=[];
+        let numeros=[];
+        alert ("debe ingresar 6 datos, pueden ser númericos, letras o palabras")
+        for (i = 0; i < 6; i++) {
+            var dat=prompt(`Ingrese el dato numero: ${i+1}`);
+            
+            if (isNaN(dat)==true){
+                letras.push(dat.charAt(0));
+            }else{
+                numeros.push(dat.charAt(0));
+            }
+        
+        }
+        letras.sort();
+        numeros.sort();
+        mat2=letras.concat(numeros);
+        document.write(mat2);
+
+
+    </script>
+</body>
+
+</html>
